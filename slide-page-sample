@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>WebP Server</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+		<style>
+			.reveal .footer {
+				position: absolute;
+				bottom: 1em;
+				left: 1em;
+				font-size: 0.5em;
+				}
+		</style>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119121407-6"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-119121407-6');
+		</script>
+
+	</head>
+	<body>
+		<div class="reveal">
+			<div class='footer'>
+				A project by Benny Think & Nova Kwok.
+			  </div>
+			<div class="slides">
+				<section data-background-image="images/cover.jpg">
+					<h2>WebP Server</h2>
+					<p>A tool that will serve your JPG/PNGs as WebP format with compression, on-the-fly.</p>
+
+				</section>
+
+				<section>
+					<h2>What's WebP</h2>
+					<p>WebP is a modern image format that provides superior lossless and lossy compression for images on the web.
+						 Using WebP, webmasters and web developers can create smaller, richer images that make the web faster.</p>
+				</section>
+
+				<section>
+					<h2>Why WebP</h2>
+					<p>
+						WebP lossless images are 26% smaller in size compared to PNGs. WebP lossy images are 25-34% smaller than comparable JPEG images at equivalent SSIM quality index.
+					</p>
+				</section>
+
+				<section>
+					<h2>Current Problems with WebP</h2>
+					<ul>
+						<li>Safari doesn't support it.</li>
+						<li>Tons of Nginx and JavaScript works.</li>
+						<li>It need a tool to transfer.</li>
+						<li>mod_pagespeed is not easy to use.</li>
+					</ul>
+				</section>
+
+				<section data-background-image="images/webp.jpg">
+					<h2>WebP Server-Go</h2>
+					<p>Finally, we have WebP Server, it's..</p>
+					<p class="fragment">Single binary.(With Golang)</p>
+					<p class="fragment">Blazing fast...</p>
+					<p class="fragment">And of course..</p>
+					<p class="fragment">Convert your images..</p>
+					<p class="fragment">ON THE FLY</p>
+				</section>
+
+				<section>
+					<h2>Get WebP Server-Go</h2>
+					<ul>
+						<li>
+							<a href="https://github.com/n0vad3v/webp_server_go">GitHub</a>
+						</li>
+						<li>
+							<a href="https://github.com/n0vad3v/webp_server_go/releases/">Binary/RPM Downloads</a>
+						</li>
+					</ul>
+				</section>
+			</div>
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				hash: true,
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/highlight/highlight.js' },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
+
